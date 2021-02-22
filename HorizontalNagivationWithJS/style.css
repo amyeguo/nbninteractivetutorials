@@ -1,0 +1,121 @@
+body {
+  background-color: #ffea9e;
+  margin: 0;
+}
+.header {
+  padding: 40px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  display: block;
+  overflow: auto;
+}
+h1 {
+  font-size: 4em;
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 3px 3px #de7474;
+}
+#content {
+  width: 70vw;
+  margin: auto;
+  display: block;
+  overflow: auto;
+  padding: 20px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+h2 {
+  font-size: 1, 8em;
+}
+.names {
+  float: right;
+}
+.firstletter {
+  font-size: 2em;
+}
+img {
+  width: 100%;
+  display: block;
+}
+p {
+  font-size: 1.1em;
+  font-family: "Lora", serif;
+}
+
+.text {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.animal {
+  background-color: #ffea9e;
+  padding: 1.4vw;
+  margin-bottom: 30px;
+}
+
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* MOBILE STYLING - add any mobile specific CSS here but please leave navbar styling as is!*/
+
+@media screen and (max-width: 800px) {
+  .content {
+    width: 95%;
+  }
+}
+
+.mag-navbar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 7vh;
+  padding: 1vh 0;
+  z-index: 1;
+}
+.nbn-logo-nav {
+  margin-left: 1vw;
+  height: 100%;
+}
+.nbn-path {
+  fill: white;
+  transition: fill 1s ease;
+}
+.homepage-link:hover .nbn-path {
+  fill: #b6acd1;
+}
+
+button {
+  background-color: #de7474;
+  border: 1px solid black;
+  display: inline-block;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: white;
+  color: #de7474;
+}
+.next {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 400px;
+}
+.back {
+  float: left;
+  left: 10px;
+  position: absolute;
+  top: 400px;
+}

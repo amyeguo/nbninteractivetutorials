@@ -1,0 +1,96 @@
+body {
+  margin: 0px;
+  background-color: #d8e2fd;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h1 {
+  text-align: center;
+  /*The font size is 10% of the viewport's width*/
+  /*Ex: if the viewport width is 500px, then the font-size is 50px*/
+  font-size: 10vw;
+  font-family: "Open Sans", sans-serif;
+  /*More on webkit text stroke here: https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-text-stroke*/
+  -webkit-text-stroke: 2px #4285f4;
+  -webkit-text-fill-color: transparent;
+
+  /*The transition property will change the text-shadow property value smoothly, over the duration of 1s*/
+  transition: text-shadow 1s;
+  margin: 0px;
+}
+
+/*this selector will activate when the mouse hovers over the h1 element*/
+h1:hover {
+  /*adds a text shadow*/
+  text-shadow: -3px -3px #4285f4;
+}
+h2 {
+  font-family: "Open Sans", sans-serif;
+  color: #d8e2fd;
+  background-color: #4285f4;
+  padding: 10px;
+}
+.content {
+  width: 70%;
+  margin: auto; /*centers the element with class="content into the center*/
+  font-family: "Noto Sans JP", sans-serif;
+  color: #4285f4;
+  /*this 1.3x the default font size */
+  font-size: 1.3em;
+}
+
+em {
+  font-weight: bold;
+}
+em:hover {
+  /*"underlines" the text on hover by adding a border to the bottom */
+  border-bottom: 3px solid #4285f4;
+}
+
+a {
+  /* by default, the <a> tag is underlined and has a color */
+  text-decoration: none;
+  color: #4285f4;
+}
+
+/*styles the buttons with class="accordion*/
+.accordion {
+  color: #4285f4;
+  background-color: transparent;
+  cursor: pointer; /*on hover, the cursor turns into a pointer*/
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  border-bottom: 3px solid #4285f4;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.accordion:hover {
+  color: #957fef;
+  border-bottom: 3px solid #957fef;
+}
+
+.panel {
+  padding: 20px;
+  display: block;
+  height: auto;
+  overflow: auto;
+  display: none;
+}
+
+.panel img {
+  float: left;
+  margin-right: 15px;
+  width: 50%;
+}
+
+.panel p {
+  display: block;
+}
+.contactus {
+  text-align: center;
+}
